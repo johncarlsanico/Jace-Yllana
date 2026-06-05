@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #fcf7f0;
+  --foreground: #352619;
+  --card: rgba(255, 252, 247, 0.84);
+  --card-foreground: #352619;
+  --primary: #b78938;
+  --primary-foreground: #fffaf1;
+  --secondary: #f2e6d6;
+  --secondary-foreground: #4a3725;
+  --accent: #d8bf97;
+  --accent-foreground: #3e2d1d;
+  --muted: #efe1cf;
+  --muted-foreground: #79624c;
+  --border: rgba(183, 137, 56, 0.16);
+  --ring: rgba(183, 137, 56, 0.24);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    position: relative;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top left, rgba(242, 209, 146, 0.2), transparent 30%),
+      radial-gradient(circle at top right, rgba(226, 191, 145, 0.16), transparent 24%),
+      linear-gradient(180deg, #fffaf4 0%, #fcf7f0 35%, #f9f0e3 100%);
+    font-family: 'Manrope', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(212, 175, 55, 0.24);
+    color: #1f1f1f;
+  }
+
+  img {
+    display: block;
+  }
+
+  body::before,
+  body::after {
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    inset: auto;
+    z-index: -1;
+    border-radius: 9999px;
+    filter: blur(80px);
+    opacity: 0.65;
+  }
+
+  body::before {
+    top: 4rem;
+    left: -4rem;
+    height: 18rem;
+    width: 18rem;
+    background: rgba(236, 201, 139, 0.22);
+  }
+
+  body::after {
+    right: -5rem;
+    top: 22rem;
+    height: 22rem;
+    width: 22rem;
+    background: rgba(214, 189, 157, 0.18);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply border backdrop-blur-xl shadow-[0_24px_80px_rgba(98,63,17,0.1)];
+    background: linear-gradient(180deg, rgba(255, 252, 247, 0.9), rgba(255, 247, 238, 0.72));
+    border-color: rgba(183, 137, 56, 0.14);
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-18 sm:py-22 lg:py-28;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .grain-overlay {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)),
+      radial-gradient(rgba(120, 89, 43, 0.08) 0.7px, transparent 0.7px);
+    background-position: 0 0, 0 0;
+    background-size: auto, 12px 12px;
+  }
+}

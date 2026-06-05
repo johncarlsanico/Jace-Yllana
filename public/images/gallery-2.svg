@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title>Gallery artwork two</title>
+  <desc>Decorative family-inspired illustration with layered circles and warm tones.</desc>
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f6ecda" />
+    </linearGradient>
+    <radialGradient id="g4" cx="50%" cy="50%" r="52%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.85" />
+      <stop offset="68%" stop-color="#d4af37" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="56" fill="url(#g3)" />
+  <circle cx="600" cy="620" r="430" fill="url(#g4)" />
+  <circle cx="430" cy="430" r="160" fill="#fff8ef" opacity="0.95" />
+  <circle cx="760" cy="420" r="210" fill="#ffffff" opacity="0.84" />
+  <circle cx="560" cy="650" r="240" fill="#ffffff" opacity="0.84" />
+  <path d="M270 720C420 610 600 590 760 630C885 662 965 740 1010 840" fill="none" stroke="#8c6a3c" stroke-width="12" stroke-linecap="round" stroke-opacity="0.35" />
+  <path d="M230 850C390 740 600 720 830 770C925 792 1005 852 1060 930" fill="none" stroke="#d4af37" stroke-width="20" stroke-linecap="round" stroke-opacity="0.45" />
+  <text x="82" y="1120" fill="#8c6a3c" font-family="Georgia, serif" font-size="42" font-weight="700">Wrapped in Love</text>
+</svg>

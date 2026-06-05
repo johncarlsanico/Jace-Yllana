@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title>Gallery artwork three</title>
+  <desc>Elegant ivory and gold composition with a radiant central motif.</desc>
+  <defs>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffdf8" />
+      <stop offset="100%" stop-color="#f1e1b8" />
+    </linearGradient>
+    <radialGradient id="g6" cx="50%" cy="45%" r="48%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" rx="52" fill="url(#g5)" />
+  <circle cx="600" cy="430" r="270" fill="url(#g6)" />
+  <circle cx="600" cy="430" r="190" fill="#ffffff" opacity="0.92" />
+  <path d="M470 450C530 390 670 390 730 450C790 510 790 620 730 680C670 740 530 740 470 680C410 620 410 510 470 450Z" fill="#fff8ef" />
+  <path d="M505 500C540 470 660 470 695 500" fill="none" stroke="#8c6a3c" stroke-width="10" stroke-linecap="round" />
+  <circle cx="545" cy="545" r="14" fill="#8c6a3c" />
+  <circle cx="655" cy="545" r="14" fill="#8c6a3c" />
+  <path d="M530 610C565 640 635 640 670 610" fill="none" stroke="#b06b57" stroke-width="8" stroke-linecap="round" />
+  <text x="82" y="110" fill="#8c6a3c" font-family="Georgia, serif" font-size="42" font-weight="700">A Precious Blessing</text>
+</svg>

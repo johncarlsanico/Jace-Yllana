@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title>Gallery artwork one</title>
+  <desc>Abstract gold and ivory composition with soft curves.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf6ee" />
+      <stop offset="100%" stop-color="#ead6a5" />
+    </linearGradient>
+    <radialGradient id="g2" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#d4af37" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" rx="52" fill="url(#g1)" />
+  <circle cx="500" cy="380" r="260" fill="url(#g2)" />
+  <path d="M180 610C330 410 520 330 720 360C930 392 1030 545 1000 700C975 827 835 862 640 835C425 805 310 760 180 610Z" fill="#ffffff" opacity="0.76" />
+  <path d="M290 600C400 500 535 470 640 490C750 510 825 575 870 650" fill="none" stroke="#d4af37" stroke-width="18" stroke-linecap="round" stroke-opacity="0.55" />
+  <path d="M315 640C440 570 575 560 690 590C810 620 900 705 950 760" fill="none" stroke="#8c6a3c" stroke-width="6" stroke-linecap="round" stroke-opacity="0.28" />
+  <text x="82" y="110" fill="#8c6a3c" font-family="Georgia, serif" font-size="42" font-weight="700">A Gentle Beginning</text>
+</svg>
