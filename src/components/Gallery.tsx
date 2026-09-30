@@ -53,7 +53,12 @@ export function Gallery() {
             onClick={() => setActiveIndex(index)}
             className="group relative block w-full overflow-hidden rounded-[1.7rem] border border-primary/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,240,224,0.82))] shadow-[0_18px_44px_rgba(116,83,24,0.1)] break-inside-avoid"
           >
-            <img src={image.src} alt={image.alt} loading="lazy" className="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+            <img
+  src={image.src}
+  alt={image.alt ?? image.caption ?? 'Baby photo'}
+  loading="lazy"
+  className="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+/>
             <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(17,17,17,0.48))] opacity-0 transition duration-300 group-hover:opacity-100" />
             <div className="absolute bottom-0 left-0 right-0 p-4 text-left text-white opacity-0 transition duration-300 group-hover:opacity-100">
               <div className="text-sm font-semibold">{image.caption}</div>

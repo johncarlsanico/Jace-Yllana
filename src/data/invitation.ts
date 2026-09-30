@@ -25,12 +25,18 @@ export const invitation = {
   gallery: [
     {
       src: '/images/jace10.jpg',
+      alt: 'Baby Jace Yllana',
+      caption: 'Baby Jace Yllana',
     },
     {
       src: '/images/jace5.jpeg',
+      alt: 'Baby Jace Yllana',
+      caption: 'Baby Jace Yllana',
     },
     {
       src: '/images/jace9.png',
+      alt: 'Baby Jace Yllana',
+      caption: 'Baby Jace Yllana',
     },
   ],
   giftMessage: 'Your presence and prayers are enough. Thank you for celebrating this special day with us.',
