@@ -29,7 +29,7 @@ function ParentCard({ name, role, photo }: { name: string; role: string; photo?:
 
 export function Parents() {
   return (
-    <Section id="parents" eyebrow="Parents" title="Parents" description="With love from Gezylle's parents.">
+    <Section id="parents" eyebrow="Parents" title="Parents" description="With love from Jace Yllana's parents.">
       <div className="grid gap-5 md:grid-cols-2">
         <motion.div initial={{ opacity: 0, x: -18 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <ParentCard name={invitation.parents.father} role="Father" photo={invitation.parents.photos.father || undefined} />

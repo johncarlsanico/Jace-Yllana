@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1440" fill="none">
+  <defs>
+    <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff7fa"/>
+      <stop offset="1" stop-color="#e9a9bd"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d7ddce"/>
+      <stop offset="1" stop-color="#9eae98"/>
+    </linearGradient>
+    <g id="flower">
+      <ellipse cy="-22" rx="12" ry="23" fill="url(#petal)"/>
+      <ellipse cy="-22" rx="12" ry="23" fill="url(#petal)" transform="rotate(72)"/>
+      <ellipse cy="-22" rx="12" ry="23" fill="url(#petal)" transform="rotate(144)"/>
+      <ellipse cy="-22" rx="12" ry="23" fill="url(#petal)" transform="rotate(216)"/>
+      <ellipse cy="-22" rx="12" ry="23" fill="url(#petal)" transform="rotate(288)"/>
+      <circle r="9" fill="#d5a45c"/>
+      <circle r="3" fill="#fff0d0"/>
+    </g>
+    <g id="sprig" stroke="#aeb89f" stroke-linecap="round" stroke-width="3">
+      <path d="M0 0C28-34 49-73 64-120"/>
+      <path d="M24-30C2-54-9-57-19-55M39-58C62-80 74-81 84-78M53-86C34-106 28-115 28-124"/>
+      <path d="M24-30C4-48-8-49-19-55C-13-34 5-25 24-30ZM39-58C56-76 71-79 84-78C73-60 57-53 39-58ZM53-86C40-106 33-117 28-124C23-104 34-91 53-86Z" fill="url(#leaf)" stroke="none"/>
+    </g>
+  </defs>
+
+  <g opacity=".52">
+    <g transform="translate(55 190) rotate(-16)">
+      <path d="M-80 300C8 227 115 137 220 8" stroke="#b9b79f" stroke-width="4" stroke-linecap="round"/>
+      <use href="#sprig" transform="translate(-25 250) rotate(-20) scale(1.25)"/>
+      <use href="#sprig" transform="translate(58 178) rotate(18) scale(1.05)"/>
+      <use href="#sprig" transform="translate(120 100) rotate(-8)"/>
+      <use href="#flower" transform="translate(117 86) scale(1.25)"/>
+      <use href="#flower" transform="translate(13 229) scale(.75)"/>
+      <use href="#flower" transform="translate(201 18) scale(.65)"/>
+    </g>
+    <g transform="translate(1380 1040) rotate(164)">
+      <path d="M-80 300C8 227 115 137 220 8" stroke="#b9b79f" stroke-width="4" stroke-linecap="round"/>
+      <use href="#sprig" transform="translate(-25 250) rotate(-20) scale(1.25)"/>
+      <use href="#sprig" transform="translate(58 178) rotate(18) scale(1.05)"/>
+      <use href="#sprig" transform="translate(120 100) rotate(-8)"/>
+      <use href="#flower" transform="translate(117 86) scale(1.25)"/>
+      <use href="#flower" transform="translate(13 229) scale(.75)"/>
+      <use href="#flower" transform="translate(201 18) scale(.65)"/>
+    </g>
+    <g transform="translate(1320 120) rotate(18) scale(.68)">
+      <use href="#sprig" transform="translate(0 0) rotate(35) scale(1.2)"/>
+      <use href="#flower" transform="translate(10 -38) scale(.9)"/>
+      <use href="#flower" transform="translate(80 -100) scale(.62)"/>
+    </g>
+    <g transform="translate(105 1110) rotate(196) scale(.72)">
+      <use href="#sprig" transform="translate(0 0) rotate(35) scale(1.2)"/>
+      <use href="#flower" transform="translate(10 -38) scale(.9)"/>
+      <use href="#flower" transform="translate(80 -100) scale(.62)"/>
+    </g>
+  </g>
+</svg>

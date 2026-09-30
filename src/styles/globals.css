@@ -2,20 +2,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fcf7f0;
-  --foreground: #352619;
-  --card: rgba(255, 252, 247, 0.84);
-  --card-foreground: #352619;
-  --primary: #b78938;
-  --primary-foreground: #fffaf1;
-  --secondary: #f2e6d6;
-  --secondary-foreground: #4a3725;
-  --accent: #d8bf97;
-  --accent-foreground: #3e2d1d;
-  --muted: #efe1cf;
-  --muted-foreground: #79624c;
-  --border: rgba(183, 137, 56, 0.16);
-  --ring: rgba(183, 137, 56, 0.24);
+  --background: #fff7f8;
+  --foreground: #38262c;
+  --card: rgba(255, 251, 252, 0.88);
+  --card-foreground: #38262c;
+  --primary: #b94e70;
+  --primary-foreground: #fff9fa;
+  --secondary: #f7e5eb;
+  --secondary-foreground: #573842;
+  --accent: #d995a8;
+  --accent-foreground: #3e2930;
+  --muted: #f4e7eb;
+  --muted-foreground: #80616c;
+  --border: rgba(185, 78, 112, 0.17);
+  --ring: rgba(185, 78, 112, 0.24);
 }
 
 @theme inline {
@@ -49,9 +49,9 @@
     position: relative;
     min-height: 100vh;
     background:
-      radial-gradient(circle at top left, rgba(242, 209, 146, 0.2), transparent 30%),
-      radial-gradient(circle at top right, rgba(226, 191, 145, 0.16), transparent 24%),
-      linear-gradient(180deg, #fffaf4 0%, #fcf7f0 35%, #f9f0e3 100%);
+      radial-gradient(circle at top left, rgba(242, 184, 199, 0.24), transparent 30%),
+      radial-gradient(circle at top right, rgba(224, 164, 183, 0.18), transparent 24%),
+      linear-gradient(180deg, #fffafb 0%, #fff7f8 42%, #fbedf1 100%);
     font-family: 'Manrope', system-ui, sans-serif;
   }
 
@@ -66,8 +66,8 @@
   }
 
   ::selection {
-    background: rgba(212, 175, 55, 0.24);
-    color: #1f1f1f;
+    background: rgba(185, 78, 112, 0.22);
+    color: #38262c;
   }
 
   img {
@@ -91,7 +91,7 @@
     left: -4rem;
     height: 18rem;
     width: 18rem;
-    background: rgba(236, 201, 139, 0.22);
+    background: rgba(239, 174, 194, 0.24);
   }
 
   body::after {
@@ -99,15 +99,15 @@
     top: 22rem;
     height: 22rem;
     width: 22rem;
-    background: rgba(214, 189, 157, 0.18);
+    background: rgba(214, 154, 174, 0.2);
   }
 }
 
 @layer utilities {
   .glass-card {
-    @apply border backdrop-blur-xl shadow-[0_24px_80px_rgba(98,63,17,0.1)];
-    background: linear-gradient(180deg, rgba(255, 252, 247, 0.9), rgba(255, 247, 238, 0.72));
-    border-color: rgba(183, 137, 56, 0.14);
+    @apply border backdrop-blur-xl shadow-[0_24px_80px_rgba(105,48,67,0.09)];
+    background: linear-gradient(180deg, rgba(255, 252, 253, 0.94), rgba(255, 242, 246, 0.78));
+    border-color: rgba(185, 78, 112, 0.15);
   }
 
   .section-shell {
@@ -125,8 +125,15 @@
   .grain-overlay {
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)),
-      radial-gradient(rgba(120, 89, 43, 0.08) 0.7px, transparent 0.7px);
+      radial-gradient(rgba(120, 71, 87, 0.07) 0.7px, transparent 0.7px);
     background-position: 0 0, 0 0;
     background-size: auto, 12px 12px;
+  }
+
+  .floral-backdrop {
+    background-image: url('/images/pink-floral-background.svg');
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
   }
 }

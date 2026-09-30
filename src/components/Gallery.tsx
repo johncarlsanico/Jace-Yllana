@@ -40,7 +40,7 @@ export function Gallery() {
   const masonryColumns = useMemo(() => invitation.gallery, []);
 
   return (
-    <Section id="gallery" eyebrow="Gallery" title="Gezylle's Photo Gallery" description="Our baby's monthly photos.">
+    <Section id="gallery" eyebrow="Gallery" title="Baby Jace Yllana Photo Gallery" description="Our baby's cutiephotos.">
       <div className="columns-1 gap-4 space-y-4 sm:columns-2 lg:columns-3">
         {masonryColumns.map((image, index) => (
           <motion.button

@@ -25,7 +25,7 @@ const cards = [
 
 export function EventDetails() {
   return (
-    <Section id="details" eyebrow="Event Details" title="Celebration Details" description="Here are the ceremony and reception details for Gezylle's Christening.">
+    <Section id="details" eyebrow="Event Details" title="Celebration Details" description="Here are the ceremony and reception details for Jace Yllana's Christening.">
       <div className="grid gap-5 lg:grid-cols-2">
         {cards.map((card, index) => (
           <motion.article

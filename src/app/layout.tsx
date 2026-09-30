@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Gezylle M. Lucban Christening Invitation',
-  description: 'Join us for the Christening of Gezylle M. Lucban.',
+  title: 'Jace Yllana M. Sanico Christening Invitation',
+  description: 'Join us for the Christening of Jace Yllana M. Sanico.',
   openGraph: {
-    title: 'Gezylle M. Lucban Christening Invitation',
-    description: 'Join us for the Christening of Gezylle M. Lucban.',
+    title: 'Jace Yllana M. Sanico Christening Invitation',
+    description: 'Join us for the Christening of Jace Yllana M. Sanico.',
     type: 'website',
   },
 };
